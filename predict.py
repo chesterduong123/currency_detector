@@ -19,5 +19,6 @@ results = model.predict(
 # testing push command
 # testing push again
 # testing pull command
+# testing pull again
 
 print("Prediction complete!")
