@@ -1,0 +1,42 @@
+Push Changes (VS Code -> GitHub)
+
+git add .
+git commit -m "your message here"
+git push
+
+
+Pull Changes (GitHub -> VS Code)
+
+git pull origin main
+
+
+If you get an error that github already has commits, use:
+
+git pull origin main --allow-unrelated-histories
+
+
+To force reset to GitHub's version
+
+git fetch origin
+git reset --hard origin/main
+
+
+If you want to discard local changes and pull
+
+git checkout -- your_filename.py
+git pull origin main
+
+
+Overwrite local file with GitHub
+
+git reset --hard origin/main
+
+
+To check last 5 commits to ensure compatibility
+
+git log --oneline -5
+
+
+To check what github thinks a file looks like
+
+cat your_filename.py

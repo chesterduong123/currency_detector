@@ -16,11 +16,4 @@ results = model.predict(
     conf=0.5
 )
 
-# testing push command
-# testing push again
-# testing pull command
-# testing pull again
-# testing third pull
-# testing fourth pull
-
 print("Prediction complete!")
