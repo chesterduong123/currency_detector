@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 10
+names: ['coin_dime', 'coin_nickel', 'coin_penny', 'coin_quarter', 'dollar_1', 'dollar_10', 'dollar_100', 'dollar_20', 'dollar_5', 'dollar_50']
+
+roboflow:
+  workspace: school-rvrsh
+  project: smart-register
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/school-rvrsh/smart-register/dataset/3

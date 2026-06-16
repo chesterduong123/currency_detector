@@ -1,11 +1,13 @@
 from ultralytics import YOLO
 
 if __name__ == "__main__":
-    model = YOLO(r"C:\Users\chest\OneDrive\Documents\YOLOProjects\runs\detect\train-23\weights\best.pt")
+    # For a new model, use:
+    # model = YOLO("yolo26n.pt")
 
+    model = YOLO(r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\runs\detect\train-26\weights\best.pt")
     model.train(
-        data="C:/Users/chest/OneDrive/Documents/YOLOProjects/currency/data.yaml",
-        epochs=44,
+        data=r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\currency\data.yaml",
+        epochs=15,
         imgsz=640,
         device=0,
         workers=0
