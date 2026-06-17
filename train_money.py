@@ -4,7 +4,7 @@ if __name__ == "__main__":
     # For a new model, use:
     # model = YOLO("yolo26n.pt")
 
-    model = YOLO("yolo26s.pt")
+    model = YOLO(r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\runs\detect\train-25s960r\weights\last.pt")
     model.train(
         data=r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\data.yaml",
         epochs=10,
@@ -18,7 +18,8 @@ if __name__ == "__main__":
         mixup=0.1,
         copy_paste=0.1,
         batch=8,
-        pretrained=r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\runs\detect\train-150 epochs\weights\best.pt",
+        # pretrained=r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\runs\detect\train-150 epochs\weights\best.pt",
         patience=5,
-        cache='disk'
+        cache='disk',
+        verbose=False
     )

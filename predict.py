@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO(r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\runs\detect\train-10e960s\weights\best.pt")
+model = YOLO(r"C:\Users\chest\OneDrive\Documents\YOLO26 Stuff\Currency Project\runs\detect\train-25s960r\weights\best.pt")
 
 results = model.predict(
     source=[r"C:\Users\chest\OneDrive\Pictures\Camera Roll 1\WIN_20260614_15_51_00_Pro.jpg",
