@@ -40,3 +40,9 @@ git log --oneline -5
 To check what github thinks a file looks like
 
 cat your_filename.py
+
+
+To link a new vscode to the existing GitHub repo
+
+git init
+git remote add origin https://github.com/chesterduong123/currency_detector/blob/main/predict.py
